@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Work</title>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  </head>
+
+  <body>
+    <header class="work-header">
+      <nav class="navbar">
+        <h2 class="company">Elrumi</h2>
+        <ul>
+          <li><a href="index.html" class="hvr-underline-from-left">Home</a></li>&bull;
+          <li><a href="#" class="hvr-underline-from-left">Work</a></li>&bull;
+          <li><a href="blog.html" class="hvr-underline-from-left">Blog</a></li>&bull;
+          <li><a href="index.html#contact" class="hvr-underline-from-left">Contact</a></li>
+        </ul>
+      </nav>              
+      <div class="work-title">
+        <h1>You Have To Be Odd To Be<span class="break">Number One</span></h1>
+        <p class="italic">Branding, Graphic Design</p>
+      </div> <!-- work-title -->
+    </header>
+
+    <img src="images/project-hero.jpg" height="600" width="1440" alt="Hero Image">
+
+    <div class="work-container clearfix">
+      <section class="description-section">
+        <h3>Description</h3>
+        <p>Claritas est etia processust dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <p class="italic">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla quia et pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        <img src="images/project-detail.jpg" alt="Icons Book">
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      </section> <!-- description-section -->
+
+      <aside class="project-details">
+        <h3>Project Details</h3>
+        <h6 id="force-margin">Client</h6>
+        <p>ENVATO MARKET</p>
+        <h6>Date</h6>
+        <p>February 14, 2015</p>
+        <h6>What We Did</h6>
+        <p>
+          <ul>
+            <li><span>Logo Design</span></li>
+            <li><span>Website</span></li>
+          </ul>
+        </p>
+
+        <h6>Tools</h6>
+        <p>
+          <ul>
+            <li><span>Photoshop</span></li>
+          </ul>
+        </p>
+
+        <h6>Category</h6>
+        <p>Branding, Web Design, Wordpress</p>
+
+        <div class="social">
+          <h6>Share This</h6>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-tumblr"></i></a>
+        </div> <!-- social -->
+
+          <a href="#" class="button visit-button blue-button">Visit Website</a>
+      </aside> <!-- project-details -->
+    </div>  <!-- work-container -->
+
+    <footer class="footer">
+      <h3>Elrumi</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>&bull;
+        <li><a href="#">Twitter</a></li>&bull;
+        <li><a href="#">LinkedIn</a></li>&bull;
+        <li><a href="#">Behance</a></li>&bull;
+        <li><a href="#">Dribbble</a></li>
+      </ul>
+      <p class="italic">&copy2015 Elrumi. Designed by Pottereight</p>
+    </footer>
+  </body>
+
+  <script> // This is for smooth scrolling //
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+</html>

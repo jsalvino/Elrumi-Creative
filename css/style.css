@@ -1,0 +1,639 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden;
+				 display: block;
+				 font-size: 0;
+				 content: " ";
+				 clear: both;
+				 height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*General Styles*/
+h1, h2, h3, h4, h4, h5, h6, span {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 70px;
+	color: white;
+	text-align: center;
+	letter-spacing: 9px;
+	margin: 0;
+}
+
+p {
+	font-family: 'Droid Serif', serif;
+	font-size: 13px;
+}
+
+.break {
+	display: block;
+}
+
+.border-bottom {
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.italic {
+	font-style: italic;
+}
+
+#force-margin {
+	margin-top: 10px;
+}
+
+/* Button styles */
+.button {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .03em;
+}
+
+.black-button {
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+}
+
+.blue-button {
+	background-color: #92fcf9;
+	color: white;
+}
+
+.submit-button,
+.older-post-button {
+	height: 60px;
+	font-size: 18px;
+	padding: 10px 80px;
+	margin-top: 20px;
+}
+
+.visit-button {
+	font-size: 14px;
+	padding: 15px 65px;
+}
+
+.button:hover {
+	color: black;
+	border: 1px solid black;
+}
+
+.black-button:hover,
+.older-post-button:hover {
+	background-color: white;
+}
+
+.visit-button:hover {
+	background-color: #ffd96d;
+}
+
+.older-post-button {
+	font-size: 14px;
+}
+
+/*Footer Styles*/
+.footer {
+	background: #ffd96d;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footer ul li {
+	display: inline;
+	text-transform: uppercase;
+}
+
+.footer h3 {
+	letter-spacing: 6px;
+	font-size: 28px;
+	padding: 20px 0 10px 0;
+}
+
+.footer li {
+	padding: 0 15px;
+}
+
+.footer a {
+	color: black;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+footer a:hover {
+	color: white;
+}
+
+.footer p {
+	margin: 10px 0;
+	color: rgba(0, 0, 0, .6);
+}
+
+/**Main Page Styles**/
+.main-style {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.main-title {
+	padding-top: 15%;
+}
+
+
+/*Header & Nav Styles*/
+.top-header {
+	background-image: url(../images/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.top-header h1 {
+	padding-bottom: 250px;
+}
+.company {
+	float: left;
+	letter-spacing: 8px;
+	font-size: 24px;
+}
+
+.navbar {
+	padding-top: 3%;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.navbar ul {
+	float: right;
+}
+
+.navbar li {
+	display: inline;
+	text-transform: uppercase;
+	padding: 0 15px;
+}
+
+.navbar a {
+	color: black;
+	padding: 5px;
+}
+
+/*Main Section Styles*/
+.main {
+	text-align: center;
+	position: relative;
+	padding: 100px 0;
+}
+
+.main h2 {
+	letter-spacing: 5px;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+.main p {
+	color: rgba(0, 0, 0, 0.4);
+	width: 75%;
+	margin: 0 auto;
+	font-size: 12px;
+	padding-top: 30px;
+	letter-spacing: 0.06em;
+}
+
+.backgroundbox {
+	height: 280px;
+	width: 320px;
+	background: #ffd96d;
+	margin: 0 auto;
+}
+
+.main-graphic img {
+	position: absolute;
+	left: 35.5%;
+	top: 34%;
+}
+
+/*Skills Section Styles*/
+.skills {
+	background: #f3f3f3;
+}
+
+.skill-wrapper {
+	padding: 50px;
+	width: 86%;
+	margin: 0 auto;
+}
+
+.skill-info {
+	width: 23%;
+	float: left;
+	text-align: center;
+	background: white;
+	margin: 10px;
+	position: relative;
+	padding: 20px 0px 45px 0px;
+}
+
+.skill-info h3 {
+	letter-spacing: 2px;
+	padding: 10px;
+}
+
+.skill-info h4 {
+	font-size: 12px;
+	padding: 7px 7px 17px 7px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.skill-percent {
+	position: absolute;
+	left: 37%;
+	top: 57%;
+}
+
+.star-section {
+	padding-top: 20px;
+}
+
+/*Servics Section Styles*/
+.services {
+	text-align: center;
+	width: 83%;
+}
+
+.services a {
+	color: black;
+}
+
+.services h2 {
+	padding: 30px 0 10px 0;
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+
+.services h3 {
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+.services p {
+	margin-bottom: 20px;
+	color: rgba(0, 0, 0, .5);
+	line-height: 1.5;
+}
+
+.services p.italic {
+	text-align: center;
+}
+
+.services .fa {
+	font-size: 24px;
+}
+
+.services-blackline {
+	height: 2px;
+	width: 50px;
+	background: black;
+	margin: 0 auto;
+}
+
+.services-wrapper {
+	margin: 20px auto;
+}
+
+.services-item {
+	width: 50%;
+	float: left;
+	padding: 20px 0;
+}
+
+.services-item .services-blackline {
+	float: left;
+}
+
+.services-image {
+	float: left;
+	margin-right: 20px;
+}
+
+.services-text {
+	float: left;
+	width: 82%;
+	text-align: left;
+}
+
+.services p:not(.italic) {
+	float: left;
+	padding: 10px 0;
+}
+
+/*Facts Section Styles*/
+.facts {
+	background-image: url(../images/facts-bg.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 400px;
+}
+
+.facts p {
+	padding: 15px 0 20px 0;
+}
+
+.facts-header {
+	padding-top: 60px;
+	margin-left: 10px;
+}
+.facts .services-blackline {
+	float: left;
+}
+
+.facts-info {
+	width: 60%;
+	margin-top: 40px;
+}
+
+.fact-item {
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	float: left;
+	margin: 10px;
+}
+
+.fact-item h3 {
+	font-size: 24px;
+}
+
+.fact-item h6 {
+	font-size: 12px;
+	color: rgba(0, 0, 0, .6);
+}
+
+/*Contact Section Styles*/
+.contact {
+	text-align: center;
+	padding: 80px 0;
+}
+
+.contact h2,
+.contact p {
+	padding: 20px 0;
+}
+
+.contact h2 {
+	font-size: 40px;
+	letter-spacing: 0.1em;
+}
+
+.contact a,
+.contact h6 {
+	color: black;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	font-style: normal;
+	padding: 10px 0;
+}
+
+.contact a:hover {
+	color: #92fcf9;
+}
+
+.contact span {
+	color: #92fcf9;
+	font-size: 68px;
+	letter-spacing: 0.2em;
+	font-weight: bold;
+}
+
+/*Form Styles*/
+.form {
+	width: 75%;
+	margin: 0 auto;
+	padding: 40px 0;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+input {
+	width: 32%;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+.form textarea {
+	width: 97%;
+	margin-top: 35px;
+	font-size: 14px;
+	padding-top: 20px;
+	resize: none;
+}
+
+/**Work Page Styles**/
+
+.work-header h1 {
+	color: black;
+	font-size: 24px;
+	padding-top: 200px;
+}
+
+.work-header p {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.work-container {
+	width: 75%;
+	margin: 20px auto;
+}
+
+.work-container p {
+	padding: 10px 0;
+	color: rgba(0, 0, 0, .5);
+	line-height: 1.5;
+}
+
+.work-container .italic {
+	font-weight: bold;	
+	color: black;
+}
+
+.work-container h3 {
+	font-size: 22px;
+	padding: 15px 0;
+	letter-spacing: 0.03em;
+}
+
+/*Description Section Styles*/
+.description-section {
+	width: 60%;
+	float: left;
+	margin-bottom: 100px;
+}
+
+.description-section img {
+	width: 100%;
+	margin: 10px 0;
+}
+
+/*Sidebar Styles*/
+aside {
+	width: 30%;
+	float: right;
+}
+
+aside li {
+	list-style-type: decimal;
+	list-style-position: inside;
+	font-size: 14px;
+	color: black;
+}
+
+.project-details h6 {
+	color: black;
+	margin: 30px 0 10px 0;
+	font-size: 13px;
+}
+
+.project-details p {
+	margin: 0;
+	padding: 0;
+}
+
+.project-details span {
+	color: rgba(0, 0, 0, .5);
+	font-family: 'Droid Serif', serif;
+	text-transform: none;
+}
+
+.social a {
+	color: black;
+	margin: 0;
+	padding-right: 20px;
+}
+
+.social a:hover {
+	color: grey;
+}
+
+.social i {
+	margin-bottom: 60px;
+}
+
+/**Blog Page Styles**/
+/*Header Styles*/
+.blog-header {
+	background-image:
+	linear-gradient(rgba(146, 252, 249, 0.6), rgba(146, 252, 249, 0.6)), 
+        url('../images/swirl_pattern.png');
+}
+
+.blog-header h1 {
+	padding: 140px 0;
+}
+
+/*Blog Post Articles Section Styles*/
+.blog-wrapper {
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 70px 0;
+}
+
+.blog-wrapper p {
+	padding: 15px 0;
+}
+
+.blog-wrapper h2 {
+	font-size: 32px;
+	letter-spacing: 0.02em;
+}
+
+.blog-wrapper blockquote {
+	font-style: italic;
+	padding: 20px;
+	font-family: 'Droid Serif', serif;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+.article-wrapper {
+	margin: 60px 0;
+}
+
+.article-wrapper>img {
+	width: 100%;
+}
+.article-wrapper h3 {
+	font-size: 24px;
+	letter-spacing: 0.06em;
+}
+
+.article-wrapper p {
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.article-wrapper h6 {
+	color: black;
+}
+
+.article-stats {
+	width: 30%;
+	margin: 10px auto;
+}
+
+.article-stats img,
+.article-stats h6 {
+	float: left;
+	font-family: 'Droid Serif', serif;
+	margin-right: 10px;
+}
+
+
+.blog-affiliate,
+.blog-quote {
+	border: 1px solid black;
+	background-image: 
+	   linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('../images/swirl_pattern.png'); 
+	padding: 50px 0;
+	box-shadow: 0px 0px 0px 12px white inset;
+}
+
+.blog-quote h6 {
+	font-size: 14px;
+}
+
+.blog-affiliate h6 {
+	text-transform: none;
+	font-size: 20px;
+	padding: 15px 0;
+	font-weight: lighter;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.blog-affiliate a {
+	color: black;
+}
+
+.blog-affiliate a:hover {
+	color: grey;
+}

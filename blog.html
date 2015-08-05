@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Blog</title>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  </head>
+
+  <body> 
+    <header class="blog-header">
+      <nav class="navbar">
+        <h2 class="company">Elrumi</h2>
+        <ul>
+          <li><a href="index.html" class="hvr-underline-from-left">Home</a></li>&bull;
+          <li><a href="work.html" class="hvr-underline-from-left">Work</a></li>&bull;
+          <li><a href="#" class="hvr-underline-from-left">Blog</a></li>&bull;
+          <li><a href="index.html#contact" class="hvr-underline-from-left">Contact</a></li>
+        </ul>
+      </nav>              
+      <div class="blog-title">
+        <h1>Discover Our News<span class="break">& Stay Inspired</span></h1>
+      </div> <!-- blog-title -->
+    </header> <!-- Blog header -->
+    
+    <div class="blog-wrapper">
+      <h2>Our Blog</h2>
+      <p class="italic">Latest News and More</p>
+      <div class="services-blackline"> 
+      </div> <!-- services-blackline -->
+      
+      <div class="article-wrapper">
+        <h3>YOU DON'T NEED EYES TO SEE</h3>
+        <div class="article-stats clearfix">
+          <img src="images/icon-clock.png" alt="Clock"><h6 class="italic">January 13, 2015</h6>
+          <a href="#"><img src="images/icon-comments.png" alt="Speech Bubble"><h6 class="italic">4 Comments</h6></a>
+        </div> <!-- article-stats -->
+        <img src="images/post-01.jpg" alt="Blog Post Picture">
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non perspiciatis unde omnis voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <a href="#" class="hvr-wobble-horizontal"><h6>READ MORE &#9654;</h6></a>  
+      </div> <!-- article-wrapper -->
+      
+      <div class="blog-quote">
+        <img src="images/icon-quote.png" alt="Quote Marker">
+        <blockquote>"Working with Elrumi was extremely fun, they delivered results on time and sometimes even ahead of schedule."</blockquote>
+        <h6>DAVE AUGUST</h6>
+      </div>  <!-- blog-quote -->
+
+      <div class="article-wrapper">
+        <h3>INTERVIEW WITH MICHELLE MAY</h3>
+        <div class="article-stats clearfix">
+          <img src="images/icon-clock.png" alt="Clock"><h6 class="italic">January 13, 2015</h6>
+          <a href="#"><img src="images/icon-comments.png" alt="Speech Bubble"><h6 class="italic">4 Comments</h6></a>
+        </div> <!-- article-stats -->
+        <img src="images/post-02.jpg" alt="Blog Post Picture">
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non perspiciatis unde omnis voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <a href="#" class="hvr-wobble-horizontal"><h6>READ MORE &#9654;</h6></a>
+      </div> <!-- article-wrapper -->
+
+      <div class="blog-affiliate">
+        <img src="images/icon-link.png" alt="Chain Link">
+        <h6>Elrumi loves our affiliates! Thank you to Creative Digital Studios for all your support and sponsorship!</h6>
+        <a href="#"><h6>HTTP://CREATIVEFAKESTUDIO.COM</h6></a>
+      </div> <!-- blog-affiliate -->
+
+      <div class="article-wrapper">
+        <h3>THE BEAUTIFUL FLOWER CROWN</h3>
+        <div class="article-stats clearfix">
+          <img src="images/icon-clock.png" alt="Clock"><h6 class="italic">January 13, 2015</h6>
+          <a href="#"><img src="images/icon-comments.png" alt="Speech Bubble"><h6 class="italic">4 Comments</h6></a>
+        </div> <!-- article-stats -->  
+        <img src="images/post-03.jpg" alt="Blog Post Picture">
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non perspiciatis unde omnis voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <a href="#" class="hvr-wobble-horizontal"><h6>READ MORE &#9654;</h6></a>    
+      </div> <!-- article-wrapper -->
+
+      <a href="#" class="button older-post-button black-button">Older Post</a>
+    </div> <!-- blog-wrapper -->
+
+    <footer class="footer">
+      <h3>Elrumi</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>&bull;
+        <li><a href="#">Twitter</a></li>&bull;
+        <li><a href="#">LinkedIn</a></li>&bull;
+        <li><a href="#">Behance</a></li>&bull;
+        <li><a href="#">Dribbble</a></li>
+      </ul>
+      <p class="italic">&copy2015 Elrumi. Designed by Pottereight</p>
+    </footer>
+  </body>
+
+  <script> // This is for smooth scrolling //
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+</html>
